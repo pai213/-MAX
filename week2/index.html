@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+  <header>
+    <title>เรียนสัปดาห์ที่ 2</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+  </header>
+  <body>
+    <div class="main-container sriracha-regular">
+      <div class="nav-bar">
+        <a>ประวัติ</a>
+        <a href="https://soundcloud.com/extreamx/cover-by-hippop-116"
+          >เพลงที่ชอบ</a
+        >
+        <a
+          href="https://www.google.com/search?sca_esv=e62725b1cee83355&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vWUtYx0DZdicpfE1faGYenqWn-q4MFiFFtvJjTKeAVxqtD2OJgNgqfuyx0ErWHyBae8rw6G0qBSWcoWKM42y1TREYRbEmwgNziuUxw5rAvlMmpARIUOwP7CImEzLnRfON2Ef6d9X_3q-oKZxJM-phHSAqY8hvQ3tS8tIblRFoNa635DAQ&q=%E0%B8%A1%E0%B8%B2%E0%B8%A5%E0%B8%B5%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%A1%E0%B8%B2%E0%B8%81&sa=X&ved=2ahUKEwih_MKpweKTAxVX1DQHHYw_Fu0QtKgLegQIGBAB&biw=1920&bih=953&dpr=1#sv=CAMSVhoyKhBlLW1RZThJVFRlclVXOXZNMg5tUWU4SVRUZXJVVzl2TToOaks3NnVVMi1lUHRDVU0gBCocCgZtb3NhaWMSEGUtbVFlOElUVGVyVVc5dk0YADABGAcg99et7wVKCBABGAEgASgB"
+          >ไอดอลที่ชื่นชอบ</a
+        >
+      </div>
+    </div>
+    <div class="image-container">
+      <img id="profile-image" src="maree.jpg" alt="สวยพี่สวย" />
+    </div>
+    <div class="text-brow sriracha-regular text-center">
+      <h1 id="text-fullName">ประวัติของมาลีสวยมาก</h1>
+      <p id="text-history">
+        มาลี สวยมาก หรือนายอิทธิเดช รามวินิจ
+        เป็นสตรีมเมอร์และนักแคสต์เกมชื่อดังชาวไทยที่เป็นที่รู้จักจากสไตล์การพากย์ที่เกรียน
+        แตกต่าง และเป็นกันเอง ขวัญใจกลุ่มผู้เล่นเกมเด็กๆ โด่งดังจากการสตรีมเกม
+        GTA V และเกมอื่นๆ ผ่าน maleevsking YouTube channel
+        ซึ่งมีผู้ติดตามจำนวนมาก โดยเน้นความสนุกสนานและเป็นตัวของตัวเอง
+      </p>
+    </div>
+    <div class="image-container">
+      <button class="sriracha-regular" onclick="sayHi()">เเจกวาป</button>
+    </div>
+    <div>
+      <input placeholder="กรอกข้อมูล" type="button" />
+      <input placeholder="กรอกข้อมูล" type="checkbox" />
+      <input placeholder="กรอกข้อมูล" type="color" />
+      <input placeholder="กรอกข้อมูล" type="date" /> />
+      <input placeholder="กรอกข้อมูล" type="datetime-local" />
+      <input placeholder="กรอกข้อมูล" type="email" />
+      <input placeholder="กรอกข้อมูล" type="hidden" />
+      <input placeholder="กรอกข้อมูล" type="image" />
+      <input placeholder="กรอกข้อมูล" type="month" />
+      <input placeholder="กรอกข้อมูล" type="number" />
+      <input placeholder="กรอกข้อมูล" type="password" />
+      <input placeholder="กรอกข้อมูล" type="radio" />
+      <input placeholder="กรอกข้อมูล" type="range" />
+      <input placeholder="กรอกข้อมูล" type="reset" />
+      <input placeholder="กรอกข้อมูล" type="search" />
+      <input placeholder="กรอกข้อมูล" type="submit" />
+      <input placeholder="กรอกข้อมูล" type="tel" />
+      <input placeholder="กรอกข้อมูล" type="text" />
+      <input placeholder="กรอกข้อมูล" type="time" />
+      <input placeholder="กรอกข้อมูล" type="url" />
+      <input placeholder="กรอกข้อมูล" type="week" />
+    </div>
+  </body>
+  <script>
+    function sayHi() {
+      alert("อีเเหม๋มมมมมมมมม");
+      const textFullName = document.getElementById("text-fullName");
+      textFullName.innerText = "มาลีสวยมากก";
+      const textHistory = document.getElementById("text-history");
+      textHistory.innerText = "อีเเหม๋มทั้งจัยย";
+      const profileImage = document.getElementById("profile-image");
+      profileImage.src = "maree2.jpg";
+    }
+  </script>
+</html>
