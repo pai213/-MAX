@@ -53,3 +53,16 @@ p {
   width: 250px;
   border-radius: 60px;
 }
+footer {
+  text-align: center;
+  color: black;
+  background-color: rgb(52, 125, 173);
+  padding: 1%;
+  margin: 2%;
+  border-radius: 16px;
+}
+iframe {
+  display: block;
+  margin: auto;
+  border-radius: 16px;
+}

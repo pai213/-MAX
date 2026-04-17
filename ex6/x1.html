@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <header>
+    <title>ex1</title>
+  </header>
+
+  <body>
+    <h1>โปรเเกรมเเสดงผลตามเงื่อนไขของผู้ใช้</h1>
+    <div>
+      <input type="text" placeholder="รับอายุ" id="age-input" />
+      <p id="show-text"></p>
+      <button id="read-button" onclick="readAge()">ตรวจสอบ</button>
+    </div>
+    <script>
+      function readAge() {
+        const ageInput = document.getElementById("age-input");
+        const showText = document.getElementById("show-text");
+        const age = Number(ageInput.value);
+        if (age >= 60) {
+          showText.innerText = "วัยผู้สูงอายุ";
+        } else if (age >= 25) {
+          showText.innerText = "วัยทำงาน";
+        } else if (age >= 13) {
+          showText.innerText = "วัยรุ่น";
+        } else {
+          showText.innerText = "วัยเด็ก";
+        }
+      }
+    </script>
+  </body>
+</html>

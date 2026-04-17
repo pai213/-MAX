@@ -17,7 +17,7 @@
       <p class="text-color" id="show-text">ข้อความที่อ่านได้</p>
       <input type="text" placeholder="รหัสผ่าน" id="text-input"  />
       <div>
-    <br>
+    
       <button id="read-button" onclick="readText()">รหัสผ่านที่อ่านได้</button>
      
     </div>
@@ -28,6 +28,7 @@
         <option value="c">ตัวเลือก c</option>
         <option value="d">ตัวเลือก d</option>
       </select>
+      <br>
     <div>
       <select class="text-color" id="select-img">
         <option disabled selected>เลือกสกิลระดับตำบล</option>
@@ -39,6 +40,17 @@
       <div>
       <img class="div-image" id="selected-menu" >
      </div>
+     </div>
+     </div>
+     <br>
+     <div class="container nav-bar sriracha-regular" style="background-color: aquamarine;">
+     <h1 class="textH-color">Input ประเภทต่างๆ</h1>
+    <iframe src="https://youtu.be/A1PwvLqQC54?si=f_U5C63E53tNEQmu"
+     width="560" height="315"></iframe>
+    </div>
+    <footer class="container nav-bar sriracha-regular">
+      <p class="text-color">footer</p>
+    </footer>
     <script>
       function readText() {
         const textInput = document.getElementById("text-input");
@@ -52,12 +64,13 @@
     const selectText = document.getElementById("select-text")
      selectText.addEventListener("change", function() {
         alert(this.value);
-      });
-      if(this.value === "a"){
+         if(this.value === "a"){
         alert("คุณเลือกตัวเลือก 1");
         }  else{
               alert("เลือกได้***มาก");
         }
+      });
+     
 
         const selectImg = document.getElementById("select-img");
         const showImg = document.getElementById("selected-menu");
@@ -65,5 +78,6 @@
         showImg.src = this.value;
      });
     </script>
+    </div>
   </body>
 </html>
