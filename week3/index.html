@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <header>
+    <title>เรียนสัปดาห์ที่ 3</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+  </header>
+  <body>
+    <div class="container nav-bar sriracha-regular">
+      <h1 class="textH-color">บทเรียนเรื่อง Input</h1>
+      <div>
+      <p class="text-color" id="show-text">ข้อความที่อ่านได้</p>
+      <input type="text" placeholder="รหัสผ่าน" id="text-input"  />
+      <div>
+    <br>
+      <button id="read-button" onclick="readText()">รหัสผ่านที่อ่านได้</button>
+     
+    </div>
+     <select class="text-color" id="select-text">
+        <option disabled selected>กรุณาเลือก</option>
+        <option value="a">ตัวเลือก a</option>
+        <option value="b">ตัวเลือก b</option>
+        <option value="c">ตัวเลือก c</option>
+        <option value="d">ตัวเลือก d</option>
+      </select>
+
+      <select class="text-color" id="select-img">
+        <option disabled selected>เลือกสกิลระดับตำบล</option>
+        <option value="1.jpg">สกิลช่อง7</option>
+        <option value="2.jpg">สกิลเสื้อเเดง</option>
+        <option value="3.jpg">สกิลเสื้อดำ</option>
+      </select>
+      <div>
+      <img id="selected-menu" 
+      src="https://www.facebook.com/photo/?fbid=1402317711252103&set=pcb.1402318097918731"  />
+      <!-- <img id="selected-menu"
+       src="https://www.facebook.com/photo/?fbid=1402317824585425&set=pcb.1402318097918731" />
+      <img id="selected-menu" 
+      src="https://www.facebook.com/photo?fbid=1402317854585422&set=pcb.1402318097918731"  /> -->
+      </div>
+    <script>
+      function readText() {
+        const textInput = document.getElementById("text-input");
+        const msg = textInput.value;
+        const showText = document.getElementById("show-text");
+        showText.innerText = msg;
+    }
+    const textInput = document.getElementById("text-input");
+    textInput.addEventListener("input", readText);
+
+    const selectText = document.getElementById("select-text")
+     selectText.addEventListener("change", function() {
+        alert(this.value);
+      });
+      if(this.value === "a"){
+        alert("คุณเลือกตัวเลือก 1");
+        }  else{
+              alert("เลือกได้***มาก");
+        }
+
+        const selectImg = document.getElementById("select-img");
+        const showImg = document.getElementById("selected-menu");
+        selectImg.addEventListener("change", function() {
+        showImg.src = this.value;
+     });
+    </script>
+  </body>
+</html>
