@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <header>
+    <title>คำนวณอายุ</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+  </header>
+  <body>
+    <div class="container nav-bar sriracha-regular">
+      <div
+        style="
+          margin: 20px;
+          background-color: aquamarine;
+          padding: 10px;
+          border-radius: 5px;
+        "
+      >
+        <h1 class="text-color">กรอกปีเกิด พ.ศ.</h1>
+      </div>
+
+      <p
+        style="
+          margin: 20px;
+          background-color: aquamarine;
+
+          border-radius: 5px;
+          color: rgb(141, 13, 226);
+        "
+        id="show-text"
+      ></p>
+
+      <hr />
+      <div style="background-color: aquamarine">
+        <input
+          style="color: rgb(11, 15, 240)"
+          type="number"
+          placeholder="กรอกปีเกิด"
+          id="age-input"
+        />
+        <button onclick="readAge()">คำนวณอายุ</button><br />
+      </div>
+    </div>
+  </body>
+  <script>
+    function readAge() {
+      const ageInput = document.getElementById("age-input");
+      const age = parseInt(ageInput.value);
+      const currentYear = 2569;
+      const calculatedAge = currentYear - age;
+      const showText = document.getElementById("show-text");
+      showText.innerText = `อายุของคุณคือ ${calculatedAge} ปี`;
+    }
+  </script>
+</html>
