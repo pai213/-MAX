@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>week 4</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+        background-color: beige;
+      }
+      button{
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="showTime()">เริ่มต้นการเตือน</button>
+    <script>
+      function showTime() {
+        const intervalId = window.setInterval(
+          function () {
+            alert("เตือนปลุก ทุกๆ 2 นาที");
+            const colseinterval = window.confirm(
+              "คุณควรพีกสายตาสักครู่ คุณต้องการหยุดการเตือนหรือไม่?",
+            );
+            if (colseinterval) {
+              window.clearInterval(intervalId);
+            }
+          },
+          2 * 60 * 1000,
+        );
+      }
+
+      //   const textFromUser = window.prompt("กรุณากรอกชื่อของคุณ");
+      //   if(textFromUser){
+      //     alert("สวัสดี " + textFromUser);
+      //   }
+
+      //  const userConfirmed = window.confirm("คุณต้องการฟังเพลงไหม?");
+      //  if(userConfirmed){
+      //    window.location.href = "https://www.youtube.com/watch?v=tLXIVfdXtX8&list=RDtLXIVfdXtX8&start_radio=1";
+      //  }else{
+      //      alert("ไม่ฟังก็ไม่เป็นไร");
+      //  }
+
+      // window.setTimeout(function () {
+      //     alert("5 วินาทีผ่านไปแล้ว");
+      // }, 5 * 1000)
+    </script>
+  </body>
+</html>
