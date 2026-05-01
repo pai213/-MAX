@@ -1,0 +1,30 @@
+<!doctype html>
+  <header>
+    <title>Bomระดับกลาง-สูง</title>
+  </header>
+  <body>
+    <h1 id="show-name"></h1>
+    <button onclick="userShow()">เเสดงข้อมูลผู้ใช้</button>
+    <button onclick="window.location.reload()">รีเฟรชหน้า</button>
+    <button onclick="redirectExample()">เปิดหน้าต่างใหม่</button>
+  </body>
+  <script>
+    function userShow() {
+      alert(navigator.userAgent);
+      alert(navigator.language);
+      alert(screen.width);
+      alert(screen.height);
+    }
+    const username = window.prompt("สวัสดีคุณชื่อ");
+    if(username){
+        const showName = document.getElementById("show-name") 
+        showName.innerText = "สวัสดี คุณ:" + username
+    }
+
+    function redirectExample(){
+        window.location.assign('https://example.com')
+    }
+
+    
+  </script>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <header>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <title>ติดต่อฉัน</title>
+  </header>
+  <body>
+    <div>
+      <div class="mt-5 ml-5 flex justify-around">
+        <a
+          href="./index.html"
+          class="bg-violet-200 p-2 hover:bg-sky-300 hover:animate-bounce"
+          >ประวัติของฉัน</a
+        >
+        <a
+          href="./department.html"
+          class="bg-violet-200 p-2 hover:bg-sky-300 hover:animate-bounce"
+          >คณะที่ฉันเรียน</a
+        >
+        <a
+          href="./contact.html"
+          class="bg-violet-200 p-2 hover:bg-sky-300 hover:animate-bounce"
+          >ติดต่อฉัน</a
+        >
+      </div>
+      <div class="mt-10 text-center">
+        <h1 class="text-4xl text-red-500">ติดต่อฉัน</h1>
+        <p class="mt-3 text-sky-500">กรุณากรอกข้อมูลที่ต้องการติดต่อครับ</p>
+      </div>
+      <div class="flex justify-center mt-5">
+        <input
+          placeholder="กรุณาระบุชื่อ-นามสกุล"
+          type="text"
+          class="bg-gray-50 p-3px ml-2 mt-5 w-90 rounded border-blue-400 border-2"
+        />
+      </div>
+      <div class="flex justify-center mt-5">
+        <input
+          placeholder="กรุณาระบุ E-mail"
+          type="email"
+          class="bg-gray-50 p-3px ml-2 mt-5 w-90 rounded border-blue-400 border-2"
+        />
+      </div>
+      <div class="flex justify-center mt-5">
+        <select
+          class="bg-gray-50 p-3px ml-2 mt-5 w-90 rounded border-blue-400 border-2"
+        >
+          <option disabled selected>เลือก</option>
+          <option>ติดต่องาน</option>
+          <option>เรื่องทั่วไป</option>
+        </select>
+      </div>
+      <div class="flex justify-center mt-5">
+        <button class="bg-green-500 text-gray-50 p-5 rounded-xl hover:bg-green">
+          ส่งข้อมูล
+        </button>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>

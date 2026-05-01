@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<header>
+    <title>ระบบเเจ้งเตือนเวอร์ชันและการเข้าถึง</title>
+</header>
+<body>
+    <h1 id="show-name"></h1>
+</body>
+<script>
+   alert( navigator.userAgent)
+
+
+   
+    navigator.onLine
+    if(navigator.onLine ){
+     alert("คุณออนไลน์เเล้ว")
+    }else{
+       alert("คุณกำลังออฟไลน์ โปรดเชื่อมต่ออินเตอร์เน็ต") 
+    }
+    const name = window.prompt("กรอกชื่อของคุณ")
+    if(name){
+    const  username = document.getElementById("show-name")
+    username.innerText = "สวัสดี คุณ:" + username
+    }
+</script>
+</html>
